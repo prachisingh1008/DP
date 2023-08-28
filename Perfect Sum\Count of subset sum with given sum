@@ -31,24 +31,21 @@ const int MOD = 1e9 + 7;
 	}
 	
 };
+Given an array arr[] of non-negative integers and an integer sum, the task is to count all subsets of the given array with a sum equal to a given sum.
 
-Given an array of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum. 
-
+Note: Answer can be very large, so, output answer modulo 109+7
 
 Example 1:
 
-Input:
-N = 6
-arr[] = {3, 34, 4, 12, 5, 2}
-sum = 9
-Output: 1 
-Explanation: Here there exists a subset with
-sum = 9, 4+3+2 = 9.
+Input: N = 6, arr[] = {2, 3, 5, 6, 8, 10}
+       sum = 10
+Output: 3
+Explanation: {2, 3, 5}, {2, 8}, {10} are 
+possible subsets.
 Example 2:
+Input: N = 5, arr[] = {1, 2, 3, 4, 5}
+       sum = 10
+Output: 3
+Explanation: {1, 2, 3, 4}, {1, 4, 5}, 
+{2, 3, 5} are possible subsets.
 
-Input:
-N = 6
-arr[] = {3, 34, 4, 12, 5, 2}
-sum = 30
-Output: 0 
-Explanation: There is no subset with sum 30.
